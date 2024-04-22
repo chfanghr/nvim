@@ -20,6 +20,10 @@
         "aarch64-darwin"
       ];
 
+      flake = {
+        nvimModules.default = import ./config;
+      };
+
       perSystem = {
         pkgs,
         system,
