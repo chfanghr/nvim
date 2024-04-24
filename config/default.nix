@@ -62,6 +62,9 @@
     telescope.enable = true;
     which-key.enable = true;
     wilder.enable = true;
+    rust-tools.enable = true;
+    barbar.enable = true;
+    hardtime.enable = true;
   };
 
   clipboard.register = [
