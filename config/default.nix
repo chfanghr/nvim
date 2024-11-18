@@ -17,7 +17,7 @@
 
     lualine = {
       enable = true;
-      theme = "onedark";
+      settings.options.theme = "onedark";
     };
 
     neo-tree.enable = true;
@@ -25,14 +25,11 @@
     lsp = {
       enable = true;
       servers = {
-        hls.enable = true;
-        purescriptls.enable = true;
-        rust-analyzer = {
+        hls= {
           enable = true;
-          installCargo = false;
-          installRustc = false;
+          installGhc = false;
         };
-        dhall-lsp-server.enable = true;
+        dhall_lsp_server.enable = true;
         nushell.enable = true;
         sqls.enable = true;
         bashls.enable = true;
@@ -45,11 +42,11 @@
 
     auto-session = {
       enable = true;
-      autoSession = {
+      settings = {
         enabled = true;
-        useGitBranch = true;
-        createEnabled = true;
-        suppressDirs = [".direnv" "result"];
+        use_git_branch = true;
+        auto_creat = true;
+        supressed_dirs = [".direnv" "result"];
       };
     };
 
@@ -62,9 +59,11 @@
     telescope.enable = true;
     which-key.enable = true;
     wilder.enable = true;
-    rust-tools.enable = true;
+    rustaceanvim.enable = true;
     barbar.enable = true;
     hardtime.enable = true;
+
+    web-devicons.enable = true;
   };
 
   clipboard.register = [
